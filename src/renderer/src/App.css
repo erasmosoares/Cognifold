@@ -1,0 +1,22 @@
+/* Reset some default margin/padding and box-sizing */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Apply the teal color scheme to the flex container */
+.flex-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: teal; /* Teal background color */
+  border: 2px solid darkcyan; /* Dark cyan border color */
+  border-radius: 10px; /* Optional: Add border radius for a rounded look */
+  padding: 10px; /* Optional: Add padding for spacing inside the container */
+}
+
+/* Apply the teal color scheme to the flex items */
+.flex-item {
+  color: white; /* White text color */
+}

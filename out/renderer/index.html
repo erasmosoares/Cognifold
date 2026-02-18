@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="Content-Security-Policy"
+      content="
+        default-src 'self';
+        font-src 'self' data: https:;
+        script-src 'self' https://s3.tradingview.com;
+        style-src 'self' 'unsafe-inline';
+        img-src 'self' data: https:;
+        frame-src https://*.tradingview.com https://*.tradingview-widget.com https://*.hf.space;
+        connect-src 'self' http://localhost:8000 http://127.0.0.1:8000 https://*.tradingview.com https://*.tradingview-widget.com https://*.hf.space;
+      ">
+    <script type="module" crossorigin src="./assets/index-5plhGSQ4.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-CU-qNPg8.css">
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>

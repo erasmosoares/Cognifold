@@ -1,0 +1,11 @@
+requests
+python-dotenv
+gradio
+pypdf
+openai
+openai-agents
+pyinstaller
+uvicorn
+fastapi
+crewai[tools]
+crewai-tools

@@ -1,0 +1,125 @@
+theme_intake_task:
+  description: >
+    Receive the theme provided by the user: {theme}.
+    The theme may be a book, film, music album, song, or abstract subject.
+    Identify its category and provide minimal neutral context so all agents
+    evaluate the same object. If the theme is ambiguous, state assumptions.
+  expected_output: >
+    A concise description of the theme, its category, and any assumptions made.
+  agent: cultural_historian
+
+analytical_critique_task:
+  description: >
+    Analyze the theme focusing on structure, technique, coherence,
+    and formal execution. If the theme falls outside your analytical scope,
+    explicitly abstain and explain why.
+  expected_output: >
+    A technical critique with strengths, weaknesses, and an optional
+    provisional score (0–10), or a justified abstention.
+  agent: analytical_critic
+
+emotional_critique_task:
+  description: >
+    Evaluate the emotional impact and personal resonance of the theme.
+    Focus on atmosphere, feeling, and affect. Abstain if no emotional
+    response can be reasonably inferred.
+  expected_output: >
+    A subjective emotional response with an optional score (0–10),
+    or a justified abstention.
+  agent: emotional_critic
+
+experimental_critique_task:
+  description: >
+    Assess the degree of experimentation, risk-taking, and innovation
+    within the theme’s medium. Abstain if experimentation is not relevant.
+  expected_output: >
+    An evaluation of originality and risk with an optional score (0–10),
+    or a justified abstention.
+  agent: experimental_critic
+
+classical_critique_task:
+  description: >
+    Evaluate the theme in relation to established classics, traditions,
+    and artistic canons. Abstain if historical comparison is not applicable.
+  expected_output: >
+    A tradition-based critique with an optional score (0–10),
+    or a justified abstention.
+  agent: classical_critic
+
+provocative_critique_task:
+  description: >
+    Deliver a strong, opinionated critique designed to challenge consensus.
+    If no meaningful provocation can be made without bad faith, abstain.
+  expected_output: >
+    A bold critical stance with an optional score (0–10),
+    or a justified abstention.
+  agent: provocative_critic
+
+music_specialist_task:
+  description: >
+    If the theme is musical, analyze composition, lyrics, production,
+    and performance. If not music-related, abstain explicitly.
+  expected_output: >
+    A music-focused analysis with an optional score (0–10),
+    or a clear abstention.
+  agent: music_specialist
+
+cinema_specialist_task:
+  description: >
+    If the theme is a film or audiovisual work, analyze direction,
+    acting, editing, cinematography, and sound. Otherwise, abstain.
+  expected_output: >
+    A cinema-focused analysis with an optional score (0–10),
+    or a clear abstention.
+  agent: cinema_specialist
+
+literature_specialist_task:
+  description: >
+    If the theme is literary, analyze language, narrative voice,
+    themes, and structure. Otherwise, abstain.
+  expected_output: >
+    A literature-focused analysis with an optional score (0–10),
+    or a clear abstention.
+  agent: literature_specialist
+
+social_context_task:
+  description: >
+    Analyze possible social, political, or cultural subtext in the theme.
+    Avoid forced interpretations. Abstain if no meaningful subtext exists.
+  expected_output: >
+    A contextual analysis or a justified abstention.
+  agent: social_context_analyst
+
+comparative_analysis_task:
+  description: >
+    Compare the theme with relevant works to help position it critically.
+    Abstain if meaningful comparison is not possible.
+  expected_output: >
+    A comparative positioning analysis or a justified abstention.
+  agent: comparator_agent
+
+cross_critique_task:
+  description: >
+    Review all previous critiques. Identify disagreements, contradictions,
+    weak arguments, and strong insights. Encourage implicit debate between agents.
+  expected_output: >
+    A structured summary of conflicts, convergences, and argumentative strength.
+  agent: editor_agent
+
+synthesis_writing_task:
+  description: >
+    Synthesize all valid critiques into a coherent, readable review.
+    Respect abstentions and avoid forcing consensus where disagreement remains.
+  expected_output: >
+    A polished critical review reflecting multiple perspectives.
+  agent: critic_writer
+
+final_scoring_task:
+  description: >
+    Determine the final consensus score from 0 to 10.
+    Consider only agents who provided a score.
+    Explain how disagreements were resolved and why the final score
+    best represents the collective judgment.
+  expected_output: >
+    A final numeric score (0–10) with a clear justification.
+  agent: editor_agent
